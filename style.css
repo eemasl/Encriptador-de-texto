@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+    font-family: 'Arial', sans-serif;
+    /* Tipografía Arial */
+    background: linear-gradient(135deg, #fff5e6, #f8d88c);
+    /* Degradado dorado y blanco */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal que organiza las secciones */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    height: 80%;
+    background: #ffffff;
+    /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Estilo para la sección de encriptador */
+#encriptador {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para el h1 en la sección de salida */
+#encriptador h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f8d88c;
+    /* Color dorado para resaltar */
+    text-shadow: 1px 1px 2px #d4a373;
+    /* Sombra de texto para resaltar más */
+}
+
+#btns {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Estilo para el textarea de entrada */
+#input-msg {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid #f8d88c;
+    /* Borde dorado */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    resize: none;
+}
+
+/* Estilo para los botones */
+button {
+    background: #f8d88c;
+    /* Color dorado */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+/* Estilo para los botones al pasar el cursor */
+button:hover {
+    background: #f2b63e;
+    /* Color dorado más oscuro */
+    transform: scale(1.05);
+}
+
+/* Estilo para la sección de salida */
+#salida {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para el h1 en la sección de salida */
+#salida h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f8d88c;
+    /* Color dorado para resaltar */
+    text-shadow: 1px 1px 2px #d4a373;
+    /* Sombra de texto para resaltar más */
+}
+
+/* Estilo para el textarea de salida */
+#output-msg {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid #f8d88c;
+    /* Borde dorado */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    resize: none;
+    text-align: left;
+}
+
+/* Estilo para el botón copiar */
+#btn-copiar {
+    background: #f8d88c;
+    /* Color dorado */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+/* Estilo para el botón copiar al pasar el cursor */
+#btn-copiar:hover {
+    background: #f2b63e;
+    /* Color dorado más oscuro */
+    transform: scale(1.05);
+}
+
+/* Responsividad para dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+
+    #input-msg,
+    #output-msg {
+        width: 90%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
